@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <meta name="description" content="Personal portfolio">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- 1. HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <span class="avatar" data-initials aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name" data-name></span>
+          <span class="brand-role" data-role></span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="#home" data-nav="home">Home</a></li>
+          <li><a href="#about" data-nav="about">About</a></li>
+          <li><a href="#projects" data-nav="projects">Projects</a></li>
+          <li><a href="#skills" data-nav="skills">Skills</a></li>
+          <li><a href="#certificates" data-nav="certificates">Certificates</a></li>
+          <li><a href="#contact" data-nav="contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary" href="#resume">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 2. HERO -->
+    <section class="hero" id="home" aria-label="Introduction">
+      <div class="container hero-grid" id="hero-root"></div>
+    </section>
+
+    <!-- 3. ABOUT -->
+    <section class="section" id="about" aria-label="About">
+      <div class="container" id="about-root"></div>
+    </section>
+
+    <!-- 4. PROJECTS -->
+    <section class="section bg-soft" id="projects" aria-label="Featured project">
+      <div class="container" id="projects-root"></div>
+    </section>
+
+    <!-- 5. SKILLS -->
+    <section class="section" id="skills" aria-label="Skills">
+      <div class="container" id="skills-root"></div>
+    </section>
+
+    <!-- 6. EDUCATION -->
+    <section class="section section-tight" id="education" aria-label="Education">
+      <div class="container" id="education-root"></div>
+    </section>
+
+    <!-- 7. CERTIFICATES -->
+    <section class="section bg-soft" id="certificates" aria-label="Certificates">
+      <div class="container" id="certificates-root"></div>
+    </section>
+
+    <!-- 8. RESUME -->
+    <section class="section bg-gray" id="resume" aria-label="Résumé">
+      <div class="container" id="resume-root"></div>
+    </section>
+
+    <!-- 9. CONTACT -->
+    <section class="section bg-dark" id="contact" aria-label="Contact">
+      <div class="container contact-grid" id="contact-root"></div>
+    </section>
+  </main>
+
+  <!-- 10. FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner" id="footer-root"></div>
+  </footer>
+
+  <!-- Certificate modal -->
+  <dialog class="modal" id="cert-modal" aria-labelledby="modal-title">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <p class="modal-title" id="modal-title"></p>
+        <button class="modal-close" type="button" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <img class="modal-img" alt="">
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
